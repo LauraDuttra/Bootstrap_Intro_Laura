@@ -1,1 +1,119 @@
-<!-- 1ª Digitação (Resolver exercício aqui) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Login</title>
+
+  <!-- Link para o CSS do Bootstrap (para ícones) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Link para o CSS do Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-color: #f4f7fc;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-control {
+      border-radius: 30px;
+      padding-left: 40px;
+      font-size: 16px;
+      height: 45px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 5px rgba(99, 190, 255, 0.8);
+      border-color: #63beff;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .form-group i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .btn {
+      background-color: #63beff;
+      border: none;
+      color: white;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #4a9fd6;
+      cursor: pointer;
+    }
+
+    .btn:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Login</h2>
+    <form action="#">
+      <!-- Campo de email -->
+      <div class="form-group">
+        <i class="bi bi-envelope"></i>
+        <input type="email" class="form-control" placeholder="Email" required>
+      </div>
+
+      <!-- Campo de senha -->
+      <div class="form-group">
+        <i class="bi bi-lock"></i>
+        <input type="password" class="form-control" placeholder="Senha" required>
+      </div>
+
+      <!-- Botão de submit -->
+      <button type="submit" class="btn">
+        <i class="bi bi-arrow-right"></i> Entrar
+      </button>
+    </form>
+  </div>
+
+  <!-- Link para o JS do Bootstrap e dependências -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
