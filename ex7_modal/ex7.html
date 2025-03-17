@@ -3,39 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal Bootstrap</title>
+    <title>Carossel Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Desenvolvendo o modal -->
     <div class="container mt-3">
-        <button class="btn btn-danger" data-bs-toggle="modal"
-        data-bs-target="#exemploModal">
-            Abrir modal
-        </button>
-
-        <div class="modal fade" id="exemploModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Título do modal!✨</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h6>Bem-vindos!</h6>
-                        <p>Exemplo de modal</p>
-                        <p>2025</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button class="btn btn-primary">Salvar</button>
-                    </div>
+        <div class="carousel slide" id="carouselExemplo" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/600x400/000000/FFF" alt="Figura1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/600x400/orange/FFF" alt="Figura2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/600x400/gray/black" alt="Figura3" class="d-block w-100">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExemplo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
